@@ -1,0 +1,297 @@
+.nobr {
+  white-space: nowrap;
+}
+
+body {
+  padding-top: 50px;
+}
+
+.nav-social-label {
+  padding-left: 4px;
+}
+
+@media (min-width: 768px) {
+  .nav-social-label {
+    display: none;
+  }
+}
+
+.homebox {
+  text-align: center;
+}
+
+.homebox-link {
+  color: inherit;
+  text-align: center;
+  display: block;
+  padding: 16px;
+}
+
+.homebox-link:hover {
+  text-decoration: none;
+  color: inherit;
+  background-color: #dbe9f5;/*#bdd6ec*/
+  border-radius: 5px;
+}
+
+.homebox-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.homebox-icon {
+  font-size: 5.5em;
+  color: transparent;
+}
+
+
+.page-header-null {
+  margin-top: 40px;
+}
+
+.page-header-line-item {
+  white-space: nowrap;
+  padding-left: 8px;
+  padding-right: 8px;
+  line-height: 133.33333333%;
+}
+
+.email-link {
+  color: inherit;
+}
+
+#experienceList img.media-object, #educationList img.media-object {
+  height: 64px;
+  width: 64px;
+  position: absolute;
+}
+
+.media-body {
+  margin-left: 74px;
+  position: relative;
+  width: auto;
+  display:block;
+}
+
+.media {
+  min-height: 64px; /* necessary for the page breaks to not ignore absolutely positioned images */
+}
+
+.media-subheading {
+  font-style: italic;
+}
+
+.project-heading {
+  margin-top: 2px;
+}
+
+.project-content {
+  margin-bottom: 30px;
+}
+
+.project-content .btn i.fa {
+  padding-right: 4px;
+}
+
+.project-content .btn {
+  margin-bottom: 4px;
+}
+
+.img-thumbnail-placeholder {
+  padding: 60px 20px;
+  background-color: #bdc3c7;
+  text-align: center;
+  font-style: italic;
+  color: #ecf0f1;
+  font-size: 18px;
+}
+
+.skill-box {
+  margin-bottom: 10px;
+  float: left;
+  width: 25%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+  .skill-box {
+    width: 20%;
+  }
+}
+
+@media (min-width: 992px) {
+  .skill-box {
+    width: 16.66666667%;
+  }
+}
+
+.skill-icon {
+  font-size: 5em;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 767px) {
+  .skill-icon {
+    font-size: 3.5em;
+  }
+}
+
+
+.skill-icon .fa {
+  font-size: 85%;
+  position: relative;
+  top:-7px;
+}
+
+.skill-icon-html {
+  color: #d28445;
+}
+.skill-icon-css {
+  color: #6A9fb5;
+}
+.skill-icon-javascript {
+  color: #f4bf75;
+}
+.skill-icon-php {
+  color: #528da6;
+}
+.skill-icon-sql {
+  color: #75B5AA;
+}
+.skill-icon-java {
+  color: #ba4748;
+}
+.skill-icon-jquery {
+  color: #6a9fb5;
+}
+.skill-icon-bootstrap {
+  color: #6f5499;
+}
+.skill-icon-git {
+  color: #d28445;/*#f14e32*/
+}
+.skill-icon-apache {
+  color: #557697;
+}
+.skill-icon-mysql {
+  color: #d28445;
+}
+.skill-icon-nodejs {
+  color: #80bd01;
+}
+.skill-icon-wordpress {
+  color: #1e8cbe;
+}
+.skill-icon-tumblr {
+  color: #536b8f;
+}
+.skill-icon-android {
+  color: #9acd00;
+}
+.skill-icon-eclipse {
+  color: #645499;
+}
+.skill-icon-dreamweaver {
+  color: #90b836;
+}
+
+.skill-label {
+  font-size: 1em;
+  text-align: center;
+  font-weight: bold;
+  margin-top:0;
+  padding-top:0;
+}
+
+.skill-score {
+  font-size: 1em;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .skill-label, .skill-score {
+    font-size: 0.85em;
+  }
+}
+
+.skill-score-good:before {
+  content: "\f005\f006\f006";
+}
+.skill-score-great:before {
+  content: "\f005\f005\f006";
+}
+.skill-score-excellent:before {
+  content: "\f005\f005\f005";
+}
+
+.skill-legend-parent {
+  text-align: center;
+}
+
+.skill-legend {
+  margin: 4px auto;
+  padding: 4px;
+  border: 1px solid #ddd;
+  text-align: center;
+  display: inline-block;
+}
+
+.skill-legend-item {
+  margin: 4px 10px 4px 4px;
+  display: inline;
+  white-space: nowrap;
+}
+
+
+.footer-element {
+  float: left;
+  margin-right: 10px;
+}
+
+.btn-project-width {
+  min-width: 120px;
+}
+
+@media print {
+  body {
+    padding-top: 0;
+  }
+
+  .page-header {
+    margin-top: 0;
+  }
+
+  a.email-link {
+    text-decoration: none;
+  }
+  
+  .skill-box {
+    page-break-inside: avoid;
+    width: 12.5%; /*16.66666667%;*/
+  }
+
+  .media {
+    page-break-inside: avoid;
+  }
+  
+  .project-row {
+    page-break-inside: avoid;
+  }
+  
+  a.project-thumbnail[href]:after, .media a[href]:after, a.email-link[href]:after {
+    content: "";
+    
+    
+  }
+  
+  /* workaround because printing uses the XS grid in most browsers */
+  .project-thumbnail {
+    max-width: 200px ! important;
+
+  }
+}
